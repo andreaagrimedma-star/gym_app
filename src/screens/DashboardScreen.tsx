@@ -5,7 +5,7 @@ import { StatusBar } from 'expo-status-bar';
 const DashboardScreen = ({ navigation }: { navigation: any }) => {
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
       <View style={styles.header}>
         <Text style={styles.title}>Old Gym</Text>
         <Text style={styles.subtitle}>Gestione Palestra</Text>
@@ -36,23 +36,23 @@ const DashboardScreen = ({ navigation }: { navigation: any }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#121212', // Nero scuro
   },
   header: {
     padding: 20,
-    backgroundColor: '#fff',
+    backgroundColor: '#121212',
     borderBottomWidth: 1,
-    borderBottomColor: '#ddd',
+    borderBottomColor: '#333',
     alignItems: 'center',
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#333',
+    color: '#FFFFFF', // Bianco
   },
   subtitle: {
     fontSize: 16,
-    color: '#666',
+    color: '#CCFF00', // Verde neon
     marginTop: 5,
   },
   menu: {
@@ -61,28 +61,30 @@ const styles = StyleSheet.create({
     gap: 15,
   },
   card: {
-    backgroundColor: '#fff',
+    backgroundColor: '#1E1E1E', // Grigio scuro
     padding: 20,
-    borderRadius: 10,
+    borderRadius: 12,
+    borderLeftWidth: 4,
+    borderLeftColor: '#CCFF00', // Accento Verde neon
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
+    shadowOpacity: 0.3,
     shadowRadius: 4,
     elevation: 3,
     marginBottom: 15,
   },
   disabledCard: {
-    opacity: 0.6,
+    opacity: 0.5,
   },
   cardTitle: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#333',
+    color: '#FFFFFF', // Bianco
     marginBottom: 5,
   },
   cardDescription: {
     fontSize: 14,
-    color: '#666',
+    color: '#B0B0B0', // Grigio chiaro
   },
 });
 
