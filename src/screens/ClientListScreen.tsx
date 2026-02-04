@@ -44,13 +44,13 @@ const ClientListScreen = ({ navigation }: { navigation: any }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#121212',
   },
   listContent: {
     padding: 15,
   },
   card: {
-    backgroundColor: '#fff',
+    backgroundColor: '#1E1E1E',
     padding: 15,
     borderRadius: 8,
     marginBottom: 10,
@@ -69,11 +69,11 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#333',
+    color: '#FFFFFF',
   },
   plan: {
     fontSize: 14,
-    color: '#666',
+    color: '#B0B0B0',
   },
   status: {
     fontSize: 12,
